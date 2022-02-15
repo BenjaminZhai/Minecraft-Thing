@@ -14,14 +14,14 @@
 
   <h2>Select a Character:</h2>
   <p>
-    <img class="character-img active" src="img/steve.jpg" alt="Steve">
-    <img class="character-img" src="img/alex.jpg" alt="Alex">
+    <img id="steveimg" class="character-img active " src="img/steve.jpg" alt="Steve">
+    <img id="aleximg" class="character-img " src="img/alex.jpg" alt="Alex">
   </p>
   <hr>
 
   <h2>Simulate Fishing</h2>
   <p>
-    <button>Fish</button>
+    <button id="fishbtn">Fish</button>
     <button>+5</button>
     <button>Until 200 Cod</button>
   </p>
@@ -31,14 +31,17 @@
   </p>
 
   <p>
-    <img src="img/Raw-Cod.png" alt="Raw Cod" width="20px"> Raw Cod: <span>0</span> |
-    <img src="img/Raw-Salmon.png" alt="Raw Salmon" width="20px"> Raw Salmon: <span>0</span>
+    <img src="img/Raw-Cod.png" alt="Raw Cod" width="20px"> Raw Cod: <span id="numcod">0</span> |
+    <img src="img/Raw-Salmon.png" alt="Raw Salmon" width="20px"> Raw Salmon: <span id ="numsam">0</span>
   </p>
   <p>
-    <img src="img/Tropical-Fish.png" alt="Tropical Fish" width="20px"> Tropical Fish: <span>0</span> |
-    <img src="img/Pufferfish.png" alt="Pufferfish" width="20px"> Pufferfish: <span>0</span>
+    <img src="img/Tropical-Fish.png" alt="Tropical Fish" width="20px"> Tropical Fish: <span id = "numtrop">0</span> |
+    <img src="img/Pufferfish.png" alt="Pufferfish" width="20px"> Pufferfish: <span id = "numpuff">0</span>
   </p>
 
+
+  <!-- LOAD JAVASCRIPT -->
+  <script src="script.js"></script>
 </body>
 
 </html>
