@@ -66,6 +66,25 @@ function fishone() {
         }
     } else {
         // use alex probability for fishing
-        
+        let ranum = Math.random();
+        console.log (ranum)
+        if (ranum < 0.1){
+            numcod++
+            resultImgEl.src = "img/Raw-Cod.png";
+            codImgEl.innerHTML = numcod
+        } else if(ranum < 0.2){
+            numsam++
+            resultImgEl.src = "img/Raw-Salmon.png";
+            samImgEl.innerHTML = numsam
+
+        } else if (ranum < 0.5){
+            numtrop++
+            resultImgEl.src = "img/Tropical-Fish.png";
+            tropImgEl.innerHTML = numtrop
+
+        } else {
+            numpuff++
+            resultImgEl.src = "img/Pufferfish.png";
+            puffImgEl.innerHTML = numpuff
     }
-}
+    }}
